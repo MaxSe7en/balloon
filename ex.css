@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(
+    to right bottom,
+    #f30096e7,
+    #f81b9c,
+    #f6328c,
+    #ff0988,
+    #d608ff,
+    #b50cdf
+  );
+}
+
+.carousel {
+  overflow: hidden;
+  backdrop-filter: blur(0.5rem);
+  box-shadow: -3px -3px 30px 5px #555554;
+  width: 320px;
+  height: 500px;
+  transition: ease-in;
+  border-radius: 20px;
+}
+
+.image-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
+}
+
+img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
